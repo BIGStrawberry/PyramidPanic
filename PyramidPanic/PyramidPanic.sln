@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidPanic", "PyramidPanic\PyramidPanic\PyramidPanic.csproj", "{4FB3637E-1859-468A-B731-B90AD9B1DA6A}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PyramidPanicContent", "PyramidPanic\PyramidPanicContent\PyramidPanicContent.contentproj", "{A706F2DE-2236-44EF-AE00-7EE4B35C05C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidPanicContent", "PyramidPanic\PyramidPanicContent\PyramidPanicContent.contentproj", "{A706F2DE-2236-44EF-AE00-7EE4B35C05C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26A03259-6ADA-4C03-9A5F-F883588A6254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

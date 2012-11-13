@@ -11,27 +11,23 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-    public class StartScene :: IStateGame
+    class LoadScene
     {
         //Fields
         private PyramidPanic game;
-        private Image background, title;
-        private MenuStartScene menu;
-
 
         //Constructor
-        public StartScene(PyramidPanic game)
+        public LoadScene(PyramidPanic game)
         {
             this.game = game;
-            this.background = new Image(game, @"StartSceneAssets\Background", new Vector2(0f, 0f));
-            this.title = new Image(game, @"StartSceneAssets\Title", new Vector2(100f, 30f));
-            this.menu = new MenuStartScene(game);
+            this.Initialize();
         }
 
-        //Initialize
-        public void Initialize()
-        {
 
+        //Initialize
+        private void Initialize()
+        {
+            this.LoadContent();
         }
 
         //LoadContent
@@ -40,19 +36,21 @@ namespace PyramidPanic
 
         }
 
+
         //Update
         public void Update(GameTime gameTime)
         {
-            this.menu.Update(gameTime);
+
         }
 
 
         //Draw
         public void Draw(GameTime gameTime)
         {
-            this.background.Draw(this.game.SpriteBatch);
-            this.title.Draw(this.game.SpriteBatch);
-            this.menu.Draw(gameTime);
+            this.game.GraphicsDevice.Clear(Color.Red);
         }
+
+
+
     }
 }

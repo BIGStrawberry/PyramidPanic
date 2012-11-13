@@ -17,9 +17,15 @@ namespace PyramidPanic
         //Fields
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
-        private StartScene startScene;
+        private IStateGame gameState;
+
 
         //Properties
+        public IStateGame GameState
+        {
+            get { return this.gameState; }
+            set { this.gameState = value; }
+        }
         public SpriteBatch SpriteBatch
         {
             get { return this.spriteBatch; } 
@@ -36,7 +42,7 @@ namespace PyramidPanic
         protected override void Initialize()
         {
             this.IsMouseVisible = true;
-            this.Window.Title = "Pyramid Panic";
+            this.Window.Title = "Pyramid Fucking Panic";
             this.graphics.PreferredBackBufferHeight = 480;
             this.graphics.PreferredBackBufferWidth = 640;
             this.graphics.ApplyChanges();
@@ -47,7 +53,8 @@ namespace PyramidPanic
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
-            this.startScene = new StartScene(this);
+            this.gameState = new StartScene(this);
+            this.playScene = new PlayScene(this);
         }
 
         protected override void UnloadContent()
@@ -61,6 +68,8 @@ namespace PyramidPanic
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            Input.Update();
+            this.gameState.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -69,7 +78,7 @@ namespace PyramidPanic
         {
             this.GraphicsDevice.Clear(Color.CornflowerBlue);
             this.spriteBatch.Begin();
-            this.startScene.Draw(gameTime);
+            this.gameState = new StartScene(this);
             this.spriteBatch.End();
             base.Draw(gameTime);
         }

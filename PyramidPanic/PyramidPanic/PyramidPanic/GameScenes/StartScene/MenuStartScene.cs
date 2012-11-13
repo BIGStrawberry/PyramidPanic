@@ -13,9 +13,13 @@ namespace PyramidPanic
 {
     public class MenuStartScene
     {
+        private enum ButtonState { Start, Load, Help, Scores, Quit, Leveleditor } ;
         //Fields
         private PyramidPanic game;
+        private ButtonState buttonState;
+        private Color buttonColorActive = Color.Gold;
         private Image start, load, help, scores, quit, leveleditor;
+        
         private int top, left, space;
         
 
@@ -30,11 +34,42 @@ namespace PyramidPanic
         //Initialize
         private void Initialize()
         {
+            this.buttonState = ButtonState.Start;
             this.top = 430;
             this.left = 4;
             this.space = 107;
             this.LoadContent();
         }
+
+        //Update
+        public void Update(GameTime gameTime)
+        {
+            if (Input.EdgeDetectKeyDown(Keys.Right))
+            {
+                this.buttonState++;
+                if (this.buttonState > ButtonState.Leveleditor)
+                {
+                   this.buttonState = ButtonState.Start;
+                }
+            }
+        
+
+    
+            if (Input.EdgeDetectKeyDown(Keys.Left))
+            {
+                this.buttonState--;
+                if (this.buttonState < ButtonState.Start)
+                {
+                    this.buttonState = ButtonState.Leveleditor;
+                }
+            }
+
+            if (Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Start)
+            {
+                this.game.GameState = new PlayScene(this.game);
+            }
+        }
+
 
 
         //LoadContent
@@ -54,19 +89,50 @@ namespace PyramidPanic
                                     @"StartSceneAssets\Button_Leveleditor", new Vector2(this.left + 5 * this.space, this.top));
         }
 
-        //Update
+       
 
 
 
         //Draw
         public void Draw(GameTime gameTime)
         {
-            this.start.Draw(this.game.SpriteBatch);
-            this.load.Draw(this.game.SpriteBatch);
-            this.help.Draw(this.game.SpriteBatch);
-            this.scores.Draw(this.game.SpriteBatch);
-            this.quit.Draw(this.game.SpriteBatch);
-            this.leveleditor.Draw(this.game.SpriteBatch);
+            Color buttonColorStart = Color.White;
+            Color buttonColorLoad = Color.White;
+            Color buttonColorHelp = Color.White;
+            Color buttonColorScores = Color.White;
+            Color buttonColorQuit = Color.White;
+            Color buttonColorLeveleditor = Color.White;
+
+            switch ( this.buttonState )
+            {
+                case ButtonState.Start:
+                       buttonColorStart = this.buttonColorActive;
+                        break;
+                case ButtonState.Load:
+                        buttonColorLoad = this.buttonColorActive;
+                         break;
+                case ButtonState.Help:
+                        buttonColorHelp = this.buttonColorActive;
+                         break;
+                case ButtonState.Scores:
+                        buttonColorScores = this.buttonColorActive;
+                         break;
+                 case ButtonState.Quit:
+                        buttonColorQuit = this.buttonColorActive;
+                         break;
+                 case ButtonState.Leveleditor:
+                        buttonColorLeveleditor = this.buttonColorActive;
+                         break;
+
+            }
+         
+          
+            this.start.Draw(this.game.SpriteBatch, buttonColorStart);
+            this.load.Draw(this.game.SpriteBatch, buttonColorLoad);
+            this.help.Draw(this.game.SpriteBatch, buttonColorHelp);
+            this.scores.Draw(this.game.SpriteBatch, buttonColorScores);
+            this.quit.Draw(this.game.SpriteBatch, buttonColorQuit);
+            this.leveleditor.Draw(this.game.SpriteBatch, buttonColorLeveleditor);
         }
 
     }
