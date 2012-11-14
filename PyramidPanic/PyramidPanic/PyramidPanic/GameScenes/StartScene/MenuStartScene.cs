@@ -68,6 +68,14 @@ namespace PyramidPanic
             {
                 this.game.GameState = new PlayScene(this.game);
             }
+
+            {
+
+            if (Input.EdgeDetectKeyDown(Keys.Escape) || this.buttonState == ButtonState.Quit)
+            {
+                this.game.GameState = new QuitScene(this.game);
+            }
+            }
         }
 
 
