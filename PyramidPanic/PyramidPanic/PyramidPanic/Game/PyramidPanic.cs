@@ -54,7 +54,6 @@ namespace PyramidPanic
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
             this.gameState = new StartScene(this);
-            this.playScene = new PlayScene(this);
         }
 
         protected override void UnloadContent()
@@ -78,7 +77,7 @@ namespace PyramidPanic
         {
             this.GraphicsDevice.Clear(Color.CornflowerBlue);
             this.spriteBatch.Begin();
-            this.gameState = new StartScene(this);
+            this.gameState.Draw(gameTime);
             this.spriteBatch.End();
             base.Draw(gameTime);
         }

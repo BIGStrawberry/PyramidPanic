@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-    class LoadScene
+    public class LoadScene : IStateGame
     {
         //Fields
         private PyramidPanic game;
@@ -25,7 +25,7 @@ namespace PyramidPanic
 
 
         //Initialize
-        private void Initialize()
+        public void Initialize()
         {
             this.LoadContent();
         }
@@ -40,6 +40,10 @@ namespace PyramidPanic
         //Update
         public void Update(GameTime gameTime)
         {
+            if (Input.EdgeDetectKeyDown(Keys.Escape))
+            {
+                this.game.GameState = new StartScene(this.game);
+            }
 
         }
 
