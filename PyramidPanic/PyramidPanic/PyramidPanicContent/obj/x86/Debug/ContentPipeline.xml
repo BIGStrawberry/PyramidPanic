@@ -73,6 +73,24 @@
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_start.xnb</Output>
       <Time>2012-01-26T11:42:20+01:00</Time>
     </Item>
+    <Item>
+      <Source>PlaySceneAssets\Blocks\Block.png</Source>
+      <Name>PlaySceneAssets\Blocks\Block</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Block.xnb</Output>
+      <Time>2012-11-20T10:50:36.2895486+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Blocks\Transparant.png</Source>
+      <Name>PlaySceneAssets\Blocks\Transparant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Transparant.xnb</Output>
+      <Time>2012-11-20T10:50:36.2905486+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

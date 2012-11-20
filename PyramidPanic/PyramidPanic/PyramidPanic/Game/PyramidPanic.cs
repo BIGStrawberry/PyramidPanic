@@ -42,7 +42,7 @@ namespace PyramidPanic
         protected override void Initialize()
         {
             this.IsMouseVisible = true;
-            this.Window.Title = "Pyramid Fucking Panic";
+            this.Window.Title = "Pyramid  Panic";
             this.graphics.PreferredBackBufferHeight = 480;
             this.graphics.PreferredBackBufferWidth = 640;
             this.graphics.ApplyChanges();

@@ -44,7 +44,7 @@ namespace PyramidPanic
             return ks.IsKeyDown(key);
         }
 
-        //Edgedetector voor de toestenbordknoppen
+        //EdgeDetector voor de toestenbordknoppen
         public static bool EdgeDetectKeyDown (Keys key)
         {
             return (ks.IsKeyDown(key) && oks.IsKeyUp(key));

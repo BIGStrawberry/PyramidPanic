@@ -12,3 +12,7 @@ C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\Pyramid
 C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_quit.xnb
 C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_scores.xnb
 C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_start.xnb
+C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Block.xnb
+C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Transparant.xnb
+C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Levels\1.txt
+C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Levels\0.txt

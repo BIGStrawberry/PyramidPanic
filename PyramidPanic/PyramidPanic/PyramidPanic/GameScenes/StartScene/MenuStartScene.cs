@@ -98,16 +98,6 @@ namespace PyramidPanic
            {
               this.game.GameState = new LevelEditorScene(this.game);
            }
-
-           
-           
-
-
-
-
-
-
-
         }
 
 
