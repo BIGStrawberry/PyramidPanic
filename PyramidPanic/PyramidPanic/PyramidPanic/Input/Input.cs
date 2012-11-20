@@ -51,7 +51,7 @@ namespace PyramidPanic
         }
 
         //EdgeDetecotr voor een linksklik van de muis.
-        public static bool EdgeDetectPressLeft()
+        public static bool MouseEdgeDetectPressLeft()
         {
             return (ms.LeftButton == ButtonState.Pressed && oms.LeftButton == ButtonState.Released);
         }

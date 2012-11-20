@@ -13,16 +13,13 @@ namespace PyramidPanic
 {
     public class MenuStartScene
     {
-        private enum ButtonState { Start, Load, Help, Scores, Quit, Leveleditor } ;
+        private enum ButtonState { Start, Load, Help, Score, Quit, LevelEditor }
         //Fields
         private PyramidPanic game;
+        private Image start, load, help, scores, quit, leveleditor;
         private ButtonState buttonState;
         private Color buttonColorActive = Color.Gold;
-        private Image start, load, help, scores, quit, leveleditor;
-
         private int top, left, space;
-
-
 
         //Constructor
         public MenuStartScene(PyramidPanic game)
@@ -40,89 +37,113 @@ namespace PyramidPanic
             this.space = 107;
             this.LoadContent();
         }
+
         //Update
         public void Update(GameTime gameTime)
         {
             if (Input.EdgeDetectKeyDown(Keys.Right))
             {
-                this.buttonState++;
-                if (this.buttonState > ButtonState.Leveleditor)
+                if (this.buttonState < ButtonState.LevelEditor)
                 {
-                    this.buttonState = ButtonState.Start;
+                    this.buttonState++;
                 }
             }
-
-
 
             if (Input.EdgeDetectKeyDown(Keys.Left))
             {
-                this.buttonState--;
-                if (this.buttonState < ButtonState.Start)
+                if (this.buttonState > ButtonState.Start)
                 {
-                    this.buttonState = ButtonState.Leveleditor;
+                    this.buttonState--;
+                }
+            }
+            //Als de startknop goudgeel is of de muis staat boven de start knop
+            if ((this.buttonState == ButtonState.Start) ||
+                 (this.start.Rectangle.Intersects(Input.MouseRectangle())))
+            {
+                //Kleur dan de knop goudgeel
+                this.buttonState = ButtonState.Start;
+                //Als er linksgeklikt wordt met de muis en hij staat boven de startknop of er wordt op de enterknop gedrukt
+                if ((Input.MouseEdgeDetectPressLeft() && this.start.Rectangle.Intersects(Input.MouseRectangle())) ||
+                       Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    //Ga dan een nieuwe playscene object maken.
+                    this.game.GameState = new PlayScene(this.game);
                 }
             }
 
-            if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Start) ||
-               (this.start.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
+            if ((this.buttonState == ButtonState.Load) ||
+                 (this.load.Rectangle.Intersects(Input.MouseRectangle())))
             {
-                this.game.GameState = new PlayScene(this.game);
+                this.buttonState = ButtonState.Load;
+                if (Input.MouseEdgeDetectPressLeft() && this.load.Rectangle.Intersects(Input.MouseRectangle()) ||
+                    Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    this.game.GameState = new LoadScene(this.game);
+                }
             }
 
-            if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Load) ||
-               (this.load.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
+            if ((this.buttonState == ButtonState.Help) ||
+                 (this.help.Rectangle.Intersects(Input.MouseRectangle())))
             {
-                this.game.GameState = new LoadScene(this.game);
+                this.buttonState = ButtonState.Help;
+                if (Input.MouseEdgeDetectPressLeft() && this.help.Rectangle.Intersects(Input.MouseRectangle()) ||
+                    Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    this.game.GameState = new HelpScene(this.game);
+                }
             }
 
-            if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Quit) ||
-               (this.quit.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
+            if ((this.buttonState == ButtonState.Score) ||
+                 (this.scores.Rectangle.Intersects(Input.MouseRectangle())))
             {
-                this.game.GameState = new QuitScene(this.game);
+                this.buttonState = ButtonState.Score;
+                if (Input.MouseEdgeDetectPressLeft() && this.scores.Rectangle.Intersects(Input.MouseRectangle()) ||
+                    Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    this.game.GameState = new ScoreScene(this.game);
+                }
             }
 
-            if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Help) ||
-              (this.help.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
+            if ((this.buttonState == ButtonState.Quit) ||
+                 (this.quit.Rectangle.Intersects(Input.MouseRectangle())))
             {
-                this.game.GameState = new HelpScene(this.game);
+                this.buttonState = ButtonState.Quit;
+                if (Input.MouseEdgeDetectPressLeft() && this.quit.Rectangle.Intersects(Input.MouseRectangle()) ||
+                    Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    this.game.GameState = new QuitScene(this.game);
+                }
             }
 
-            if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Scores) ||
-              (this.scores.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
+            if ((this.buttonState == ButtonState.LevelEditor) ||
+                 (this.leveleditor.Rectangle.Intersects(Input.MouseRectangle())))
             {
-                this.game.GameState = new ScoreScene(this.game);
+                this.buttonState = ButtonState.LevelEditor;
+                if (Input.MouseEdgeDetectPressLeft() && this.leveleditor.Rectangle.Intersects(Input.MouseRectangle()) ||
+                    Input.EdgeDetectKeyDown(Keys.Enter))
+                {
+                    this.game.GameState = new LevelEditorScene(this.game);
+                }
             }
-
-           if ((Input.EdgeDetectKeyDown(Keys.Enter) && this.buttonState == ButtonState.Leveleditor) ||
-              (this.leveleditor.Rectangle.Intersects(Input.MouseRectangle()) && Input.EdgeDetectPressRight()) ) 
-           {
-              this.game.GameState = new LevelEditorScene(this.game);
-           }
         }
 
-
-
-        //LoadContent
-        public void LoadContent()
+        //LoadContent 
+        private void LoadContent()
         {
             this.start = new Image(this.game,
-                                    @"StartSceneAssets\Button_Start", new Vector2(this.left, this.top));
+                @"StartSceneAssets\Button_start", new Vector2(this.left, this.top));
             this.load = new Image(this.game,
-                                    @"StartSceneAssets\Button_Load", new Vector2(this.left + this.space, this.top));
+                @"StartSceneAssets\Button_load", new Vector2(this.left + this.space, this.top));
             this.help = new Image(this.game,
-                                    @"StartSceneAssets\Button_Help", new Vector2(this.left + 2 * this.space, this.top));
+                @"StartSceneAssets\Button_help", new Vector2(this.left + 2 * this.space, this.top));
             this.scores = new Image(this.game,
-                                    @"StartSceneAssets\Button_Scores", new Vector2(this.left + 3 * this.space, this.top));
+                @"StartSceneAssets\Button_scores", new Vector2(this.left + 3 * this.space, this.top));
             this.quit = new Image(this.game,
-                                    @"StartSceneAssets\Button_Quit", new Vector2(this.left + 4 * this.space, this.top));
+                @"StartSceneAssets\Button_quit", new Vector2(this.left + 4 * this.space, this.top));
             this.leveleditor = new Image(this.game,
-                                    @"StartSceneAssets\Button_Leveleditor", new Vector2(this.left + 5 * this.space, this.top));
+                @"StartSceneAssets\Button_leveleditor", new Vector2(this.left + 5 * this.space, this.top));
         }
-
-
-
-
-
+        //Update
         //Draw
         public void Draw(GameTime gameTime)
         {
@@ -144,16 +165,17 @@ namespace PyramidPanic
                 case ButtonState.Help:
                     buttonColorHelp = this.buttonColorActive;
                     break;
-                case ButtonState.Scores:
+                case ButtonState.Score:
                     buttonColorScores = this.buttonColorActive;
                     break;
                 case ButtonState.Quit:
                     buttonColorQuit = this.buttonColorActive;
                     break;
-                case ButtonState.Leveleditor:
+                case ButtonState.LevelEditor:
                     buttonColorLeveleditor = this.buttonColorActive;
                     break;
-
+                default:
+                    break;
             }
 
 
@@ -164,7 +186,5 @@ namespace PyramidPanic
             this.quit.Draw(this.game.SpriteBatch, buttonColorQuit);
             this.leveleditor.Draw(this.game.SpriteBatch, buttonColorLeveleditor);
         }
-
     }
 }
-

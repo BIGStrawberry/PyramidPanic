@@ -54,7 +54,7 @@ namespace PyramidPanic
                 for (int column = 0; column < width; column++)
                 {
                     char blockElement = this.lines[row][column];
-                    this.block[ column , row ] = LoadBlock(blockElement, column * GRIDWIDTH, row * GRIDHEIGHT);
+                    this.block[column,row] = LoadBlock(blockElement, column * GRIDWIDTH, row * GRIDHEIGHT);
                 }
             }
 
@@ -67,9 +67,9 @@ namespace PyramidPanic
                 case 'w':
                     return new Block (this.game, @"Block", new Vector2(x,y), BlockCollision.NotPassable, 'w');                    
                 case '.':
-                    return new Block(this.game, @"Transparant", new Vector2(x, y), BlockCollision.Passabale, '.');
+                    return new Block(this.game, @"Transparant", new Vector2(x, y), BlockCollision.Passable, '.');
                 default:
-                    return new Block(this.game, @"Transparant", new Vector2(x, y), BlockCollision.Passabale, '.');
+                    return new Block(this.game, @"Transparant", new Vector2(x, y), BlockCollision.Passable, '.');
             }
         }
 
