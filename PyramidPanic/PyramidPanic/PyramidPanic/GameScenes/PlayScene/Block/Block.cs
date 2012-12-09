@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -21,6 +21,13 @@ namespace PyramidPanic
         private Rectangle rectangle;
         private Vector2 position;
         private Char charItem;
+        private BlockCollision blockCollision;
+
+        //Properties
+        public BlockCollision BlockCollision
+        {
+            get { return this.blockCollision; }
+        }
 
         //Constructor
         public Block(PyramidPanic game, string blockName,
@@ -31,6 +38,7 @@ namespace PyramidPanic
             this.rectangle = new Rectangle((int)position.X, (int)position.Y, this.texture.Width, this.texture.Height);
             this.position = position;
             this.charItem = charItem;
+            this.blockCollision = blockCollision;
         }
 
         public void Draw(GameTime gameTime)

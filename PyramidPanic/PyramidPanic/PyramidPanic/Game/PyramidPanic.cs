@@ -11,7 +11,6 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-
     public class PyramidPanic : Microsoft.Xna.Framework.Game
     {
         //Fields
@@ -19,36 +18,36 @@ namespace PyramidPanic
         private SpriteBatch spriteBatch;
         private IStateGame gameState;
 
-
         //Properties
         public IStateGame GameState
         {
             get { return this.gameState; }
             set { this.gameState = value; }
         }
+
         public SpriteBatch SpriteBatch
         {
-            get { return this.spriteBatch; } 
+            get { return this.spriteBatch; }
         }
-         
+
         //Constructor
         public PyramidPanic()
         {
             this.graphics = new GraphicsDeviceManager(this);
             this.Content.RootDirectory = "Content";
+            this.IsFixedTimeStep = true;
+            TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 60.0f);
         }
-
 
         protected override void Initialize()
         {
             this.IsMouseVisible = true;
-            this.Window.Title = "Pyramid  Panic";
-            this.graphics.PreferredBackBufferHeight = 480;
+            this.Window.Title = "Pyramid Panic";
             this.graphics.PreferredBackBufferWidth = 640;
+            this.graphics.PreferredBackBufferHeight = 480;
             this.graphics.ApplyChanges();
             base.Initialize();
         }
-
 
         protected override void LoadContent()
         {
@@ -58,18 +57,16 @@ namespace PyramidPanic
 
         protected override void UnloadContent()
         {
-            
-        }
 
+        }
 
         protected override void Update(GameTime gameTime)
         {
-
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            Input.Update();
-            this.gameState.Update(gameTime);
 
+            this.gameState.Update(gameTime);
+            Input.Update();
             base.Update(gameTime);
         }
 

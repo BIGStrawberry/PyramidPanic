@@ -18,23 +18,20 @@ namespace PyramidPanic
         private Image background, title;
         private MenuStartScene menu;
 
-
         //Constructor
         public StartScene(PyramidPanic game)
         {
             this.game = game;
-            this.background = new Image(game, @"StartSceneAssets\Background", new Vector2(0f, 0f));
+            this.background = new Image(game, @"StartSceneAssets\Background", Vector2.Zero);
             this.title = new Image(game, @"StartSceneAssets\Title", new Vector2(100f, 30f));
             this.menu = new MenuStartScene(game);
         }
 
-        //Initialize
         public void Initialize()
         {
 
         }
 
-        //LoadContent
         public void LoadContent()
         {
 
@@ -43,19 +40,18 @@ namespace PyramidPanic
         //Update
         public void Update(GameTime gameTime)
         {
-            if(Input.EdgeDetectKeyDown(Keys.Escape))
-           {
+            if (Input.EdgeDetectKeyDown(Keys.Escape))
+            {
                 this.game.Exit();
             }
             this.menu.Update(gameTime);
         }
 
-
         //Draw
         public void Draw(GameTime gameTime)
         {
-            this.background.Draw(this.game.SpriteBatch);
-            this.title.Draw(this.game.SpriteBatch);
+            this.background.Draw(gameTime);
+            this.title.Draw(gameTime);
             this.menu.Draw(gameTime);
         }
     }

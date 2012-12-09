@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace PyramidPanic 
+namespace PyramidPanic
 {
     public static class Input
     {
@@ -17,15 +17,18 @@ namespace PyramidPanic
         private static KeyboardState ks, oks;
         private static MouseState ms, oms;
         private static Rectangle mouseRectangle;
+        private static GamePadState gps, ogps;
 
-        //Constructor
+        //Constructor wordt eenmaal aangeroepen.
         static Input()
         {
             mouseRectangle = new Rectangle(0, 0, 1, 1);
             ks = Keyboard.GetState();
             ms = Mouse.GetState();
-            oms = ms;
+            gps = GamePad.GetState(PlayerIndex.One);
             oks = ks;
+            oms = ms;
+            ogps = gps;
         }
 
         //Update methode
@@ -33,38 +36,47 @@ namespace PyramidPanic
         {
             oks = ks;
             oms = ms;
+            ogps = gps;
             ks = Keyboard.GetState();
             ms = Mouse.GetState();
-            
+            gps = GamePad.GetState(PlayerIndex.One);
         }
 
-        //LevelDetector voor het toetsenknoppen
+
+        //EdgeDetector  gamepad
+        public static bool EdgeDetectButtonDown(Buttons button)
+        {
+            return ogps.IsButtonUp(button) && gps.IsButtonDown(button);
+        }
+
+        //LevelDetecter voor de toetsenknoppen
         public static bool DetectKeyDown(Keys key)
         {
             return ks.IsKeyDown(key);
         }
 
-        //EdgeDetector voor de toestenbordknoppen
-        public static bool EdgeDetectKeyDown (Keys key)
+        //Edgedetector voor de toetsenbordknoppen
+        public static bool EdgeDetectKeyDown(Keys key)
         {
             return (ks.IsKeyDown(key) && oks.IsKeyUp(key));
         }
 
-        //EdgeDetecotr voor een linksklik van de muis.
+        //Edgedetector voor een linksklik van de muis
         public static bool MouseEdgeDetectPressLeft()
         {
             return (ms.LeftButton == ButtonState.Pressed && oms.LeftButton == ButtonState.Released);
         }
-            
-        public static bool EdgeDetectPressRight()
+
+        //Edgedetector voor een rechtklik van de muis
+        public static bool MouseEdgeDetectPressRight()
         {
             return (ms.RightButton == ButtonState.Pressed && oms.RightButton == ButtonState.Released);
         }
 
+        //Positie van de muis
         public static Vector2 MousePosition()
         {
             return new Vector2(ms.X, ms.Y);
-
         }
 
         //Positie van de rectangle
@@ -73,8 +85,6 @@ namespace PyramidPanic
             mouseRectangle.X = ms.X;
             mouseRectangle.Y = ms.Y;
             return mouseRectangle;
-
         }
-
     }
 }
