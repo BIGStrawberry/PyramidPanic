@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -22,7 +22,7 @@ namespace PyramidPanic
         //Properties
         public Rectangle Rectangle
         {
-            get { return this.rectangle; } 
+            get { return this.rectangle; }
         }
 
         //Constructor
@@ -35,15 +35,14 @@ namespace PyramidPanic
                                            (int)position.Y,
                                            this.texture.Width,
                                            this.texture.Height);
-
         }
-
 
         //Draw
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(GameTime gameTime)
         {
-            spriteBatch.Draw(this.texture, this.rectangle, Color.White);
+            this.game.SpriteBatch.Draw(this.texture, this.rectangle, Color.White);
         }
+
         public void Draw(SpriteBatch spriteBatch, Color color)
         {
             spriteBatch.Draw(this.texture, this.rectangle, color);

@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -49,10 +49,16 @@ namespace PyramidPanic
             return ogps.IsButtonUp(button) && gps.IsButtonDown(button);
         }
 
-        //LevelDetecter voor de toetsenknoppen
+        //LevelDetecter voor het indrukken van de toetsenknoppen
         public static bool DetectKeyDown(Keys key)
         {
             return ks.IsKeyDown(key);
+        }
+
+        //LevelDetector voor het loslaten van de toetsenknoppen
+        public static bool DetectKeyUp(Keys key)
+        {
+            return ks.IsKeyUp(key);
         }
 
         //Edgedetector voor de toetsenbordknoppen

@@ -107,13 +107,13 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
-    <None Include="PlaySceneAssets\Levels\1.txt">
+    <None Include="PlaySceneAssets\Levels\6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Name>1</Name>
+      <Name>6</Name>
     </None>
-    <None Include="PlaySceneAssets\Levels\0.txt">
+    <None Include="PlaySceneAssets\Levels\2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <Name>0</Name>
+      <Name>2</Name>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +181,74 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlaySceneAssets\Explorer\collisionText.png">
+      <Name>collisionText</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlaySceneAssets\Explorer\Explorer.png">
+      <Name>Explorer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="PlaySceneAssets\Explorer\explorer_down.png">
+      <Name>explorer_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="PlaySceneAssets\Explorer\expvierkant.png">
+      <Name>expvierkant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlaySceneAssets\Panel\Panel.png">
+      <Name>Panel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlaySceneAssets\Panel\Lives.png">
+      <Name>Lives</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaySceneAssets\Levels\7.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>7</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaySceneAssets\Levels\1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>1</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaySceneAssets\Levels\0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>0</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaySceneAssets\Levels\3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>3</Name>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlaySceneAssets\Levels\4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>4</Name>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -190,6 +190,60 @@
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Fonts\Arial.xnb</Output>
       <Time>2012-12-04T09:28:30.2927048+01:00</Time>
     </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\Explorer.png</Source>
+      <Name>PlaySceneAssets\Explorer\Explorer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\Explorer.xnb</Output>
+      <Time>2012-12-09T15:53:52.0217073+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\explorer_down.png</Source>
+      <Name>PlaySceneAssets\Explorer\explorer_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\explorer_down.xnb</Output>
+      <Time>2012-12-09T15:53:52.0147069+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\expvierkant.png</Source>
+      <Name>PlaySceneAssets\Explorer\expvierkant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\expvierkant.xnb</Output>
+      <Time>2012-12-09T15:53:52.0177071+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Panel\Panel.png</Source>
+      <Name>PlaySceneAssets\Panel\Panel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Panel\Panel.xnb</Output>
+      <Time>2012-12-09T15:54:04.6454294+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Panel\Lives.png</Source>
+      <Name>PlaySceneAssets\Panel\Lives</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Panel\Lives.xnb</Output>
+      <Time>2012-12-09T15:55:07.3570163+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\collisionText.png</Source>
+      <Name>PlaySceneAssets\Explorer\collisionText</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\collisionText.xnb</Output>
+      <Time>2012-12-14T10:10:40.3476488+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

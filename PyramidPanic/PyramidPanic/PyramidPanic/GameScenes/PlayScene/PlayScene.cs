@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -43,11 +43,6 @@ namespace PyramidPanic
             if (Input.EdgeDetectKeyDown(Keys.Escape) || Input.EdgeDetectButtonDown(Buttons.B))
             {
                 this.game.GameState = new StartScene(this.game);
-            }
-
-            if (Input.MouseEdgeDetectPressLeft())
-            {
-                this.game.Exit();
             }
             this.level.Update(gameTime);
         }

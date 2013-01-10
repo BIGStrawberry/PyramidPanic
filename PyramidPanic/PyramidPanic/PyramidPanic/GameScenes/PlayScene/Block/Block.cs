@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -27,6 +27,11 @@ namespace PyramidPanic
         public BlockCollision BlockCollision
         {
             get { return this.blockCollision; }
+        }
+
+        public Rectangle Rectangle
+        {
+            get { return this.rectangle; }
         }
 
         //Constructor

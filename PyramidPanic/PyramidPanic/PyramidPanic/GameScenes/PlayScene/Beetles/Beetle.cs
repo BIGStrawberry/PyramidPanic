@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -15,9 +15,9 @@ namespace PyramidPanic
     {
         //Field
         private PyramidPanic game;
-        private Texture2D texture;
+        private Texture2D texture, collisionTexture;
         private Vector2 position;
-        private Rectangle rectangle;
+        private Rectangle rectangle, collisionRectangle;
         private IBeetle state;
         private float speed;
         private float top, bottom;
@@ -49,6 +49,8 @@ namespace PyramidPanic
                 this.position = value;
                 this.rectangle.X = (int)this.position.X + 16;
                 this.rectangle.Y = (int)this.position.Y + 16;
+                this.collisionRectangle.X = (int)this.position.X;
+                this.collisionRectangle.Y = (int)this.position.Y;
             }
         }
 
@@ -73,15 +75,23 @@ namespace PyramidPanic
             set { this.state = value; }
         }
 
+        public Rectangle CollisionRectangle
+        {
+            get { return this.collisionRectangle; }
+            set { this.collisionRectangle = value; }
+        }
+
 
         //De constructor
         public Beetle(PyramidPanic game, Vector2 position, float speed)
         {
             this.game = game;
             this.texture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Beetles\Beetle");
+            this.collisionTexture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\collisionText");
             this.position = position;
             this.speed = speed;
             this.rectangle = new Rectangle((int)this.position.X, (int)this.position.Y, this.texture.Width / 4, this.texture.Height);
+            this.collisionRectangle = new Rectangle((int)this.position.X, (int)this.position.Y, this.texture.Width / 4, this.texture.Height);
             this.state = new WalkDown(this);
         }
 

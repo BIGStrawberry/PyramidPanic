@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -16,7 +16,7 @@ namespace PyramidPanic
         //Field
         private IAnimatedSprite animatedSprite;
         private int[] xValue = { 0, 32, 64, 96 };
-        private int i = 0;
+        public int i = 1;
         private float timer;
         protected float angle = 0f;
 
@@ -28,7 +28,7 @@ namespace PyramidPanic
 
         public virtual void Update(GameTime gameTime)
         {
-            //Dit is de code voor de animatie van de sprite
+            //Dit is de code voor de animatie explorer
             this.timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (this.timer > 1f / 8f)
             {

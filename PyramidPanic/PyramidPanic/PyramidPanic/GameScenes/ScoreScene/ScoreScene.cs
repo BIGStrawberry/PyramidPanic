@@ -23,7 +23,6 @@ namespace PyramidPanic
             this.Initialize();
         }
 
-
         //Initialize
         public void Initialize()
         {
@@ -36,7 +35,6 @@ namespace PyramidPanic
 
         }
 
-
         //Update
         public void Update(GameTime gameTime)
         {
@@ -44,17 +42,12 @@ namespace PyramidPanic
             {
                 this.game.GameState = new StartScene(this.game);
             }
-
         }
-
 
         //Draw
         public void Draw(GameTime gameTime)
         {
-            this.game.GraphicsDevice.Clear(Color.Yellow);
+            this.game.GraphicsDevice.Clear(Color.Black);
         }
-
-
-
     }
 }

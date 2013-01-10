@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -49,11 +49,11 @@ namespace PyramidPanic
             {
                 image.Draw(gameTime);
             }
-            this.game.SpriteBatch.DrawString(this.font, "3", this.position + new Vector2(3.8f * 32f, -3f),
+            this.game.SpriteBatch.DrawString(this.font, Score.Lives.ToString(), this.position + new Vector2(3.8f * 32f, -3f),
                                              Color.Yellow);
-            this.game.SpriteBatch.DrawString(this.font, "0", this.position + new Vector2(9.5f * 32f, -3f),
+            this.game.SpriteBatch.DrawString(this.font, Score.Scarabs.ToString(), this.position + new Vector2(9.5f * 32f, -3f),
                                              Color.Yellow);
-            this.game.SpriteBatch.DrawString(this.font, "0", this.position + new Vector2(17.0f * 32f, -3f),
+            this.game.SpriteBatch.DrawString(this.font, Score.Points.ToString(), this.position + new Vector2(17.0f * 32f, -3f),
                                              Color.Yellow);
         }
     }
