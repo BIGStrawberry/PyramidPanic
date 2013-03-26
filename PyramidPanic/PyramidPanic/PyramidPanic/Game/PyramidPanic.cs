@@ -36,7 +36,7 @@ namespace PyramidPanic
             this.graphics = new GraphicsDeviceManager(this);
             this.Content.RootDirectory = "Content";
             this.IsFixedTimeStep = true;
-            TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 60.0f);
+            TargetElapsedTime = TimeSpan.FromSeconds(1.0f/60.0f);
         }
 
         protected override void Initialize()
@@ -57,14 +57,14 @@ namespace PyramidPanic
 
         protected override void UnloadContent()
         {
-
+           
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+            
             this.gameState.Update(gameTime);
             Input.Update();
             base.Update(gameTime);

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -11,14 +11,13 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-    public class Up : AnimatedSprite
+    public class Up : AnimatedSprite 
     {
         //Fields
         private Explorer explorer;
 
         //Constructor
-        public Up(Explorer explorer)
-            : base(explorer)
+        public Up(Explorer explorer) : base(explorer)
         {
             this.explorer = explorer;
             this.angle = -(float)Math.PI / 2;
@@ -33,16 +32,16 @@ namespace PyramidPanic
             if (ExplorerManager.CollisionDetectionWalls())
             {
                 int geheelAantalmalen32 = (int)this.explorer.Position.Y / 32;
-                this.explorer.Position = new Vector2(this.explorer.Position.X, (geheelAantalmalen32 + 1) * 32);
+                this.explorer.Position = new Vector2(this.explorer.Position.X, (geheelAantalmalen32 + 1) * 32 );
                 if (Input.DetectKeyUp(Keys.Up))
                 {
-                    this.explorer.State = new Idle(this.explorer, -(float)Math.PI / 2);
+                    this.explorer.State = new Idle(this.explorer, -(float)Math.PI/2);
                 }
             }
             //Blijf op het grid            
             if (Input.DetectKeyUp(Keys.Up))
             {
-                float modulo = (this.explorer.Position.Y >= 0) ?
+                float modulo = (this.explorer.Position.Y >=0) ? 
                                 this.explorer.Position.Y % 32 :
                                 32 + this.explorer.Position.Y;
                 if (modulo <= this.explorer.Speed)
@@ -51,7 +50,7 @@ namespace PyramidPanic
                     this.explorer.Position = (this.explorer.Position.Y >= 0) ?
                                               new Vector2(this.explorer.Position.X, geheelAantalmalen32 * 32) :
                                               new Vector2(this.explorer.Position.X, (geheelAantalmalen32 - 1) * 32);
-                    this.explorer.State = new Idle(this.explorer, -(float)Math.PI / 2);
+                    this.explorer.State = new Idle(this.explorer, -(float)Math.PI/2);
                 }
             }
             base.Update(gameTime);

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -42,20 +42,20 @@ namespace PyramidPanic
             gps = GamePad.GetState(PlayerIndex.One);
         }
 
-
+        
         //EdgeDetector  gamepad
         public static bool EdgeDetectButtonDown(Buttons button)
         {
             return ogps.IsButtonUp(button) && gps.IsButtonDown(button);
         }
-
+        
         //LevelDetecter voor het indrukken van de toetsenknoppen
         public static bool DetectKeyDown(Keys key)
         {
             return ks.IsKeyDown(key);
         }
 
-        //LevelDetector voor het loslaten van de toetsenknoppen
+        //LevelDetecter voor het loslaten van de toetsenknoppen
         public static bool DetectKeyUp(Keys key)
         {
             return ks.IsKeyUp(key);
@@ -70,7 +70,7 @@ namespace PyramidPanic
         //Edgedetector voor een linksklik van de muis
         public static bool MouseEdgeDetectPressLeft()
         {
-            return (ms.LeftButton == ButtonState.Pressed && oms.LeftButton == ButtonState.Released);
+            return ( ms.LeftButton == ButtonState.Pressed && oms.LeftButton == ButtonState.Released );
         }
 
         //Edgedetector voor een rechtklik van de muis

@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Background.xnb</Output>
-      <Time>2012-01-26T11:01:00+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Title.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Title.xnb</Output>
-      <Time>2012-01-26T11:06:10+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_help.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_help.xnb</Output>
-      <Time>2012-01-26T11:47:46+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_leveleditor.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_leveleditor.xnb</Output>
-      <Time>2012-06-06T10:17:52+02:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_load.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_load.xnb</Output>
-      <Time>2012-01-26T11:46:42+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_quit.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_quit.xnb</Output>
-      <Time>2012-01-26T11:45:32+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_scores.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_scores.xnb</Output>
-      <Time>2012-01-26T11:44:24+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>StartSceneAssets\Button_start.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\StartSceneAssets\Button_start.xnb</Output>
-      <Time>2012-01-26T11:42:20+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Blocks\Block.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Block.xnb</Output>
-      <Time>2012-11-20T10:50:36.2895486+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Blocks\Transparant.png</Source>
@@ -89,25 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Transparant.xnb</Output>
-      <Time>2012-11-20T10:50:36.2905486+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Background\Background2.png</Source>
-      <Name>PlaySceneAssets\Background\Background2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Background\Background2.xnb</Output>
-      <Time>2012-12-04T09:26:55.9653096+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Blocks\Door.png</Source>
-      <Name>PlaySceneAssets\Blocks\Door</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Door.xnb</Output>
-      <Time>2012-12-04T09:27:24.784958+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Blocks\Wall1.png</Source>
@@ -116,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Wall1.xnb</Output>
-      <Time>2012-12-04T09:28:01.728071+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Blocks\Wall2.png</Source>
@@ -125,52 +107,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Wall2.xnb</Output>
-      <Time>2012-12-04T09:28:01.7260709+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
-      <Source>PlaySceneAssets\Beetles\Beetle.png</Source>
-      <Name>PlaySceneAssets\Beetles\Beetle</Name>
+      <Source>PlaySceneAssets\Background\Background2.png</Source>
+      <Name>PlaySceneAssets\Background\Background2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Beetles\Beetle.xnb</Output>
-      <Time>2012-12-04T09:29:09.2559334+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Scorpion\Scorpion.png</Source>
-      <Name>PlaySceneAssets\Scorpion\Scorpion</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Scorpion\Scorpion.xnb</Output>
-      <Time>2012-12-04T09:29:59.2607935+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Treasures\Potion.png</Source>
-      <Name>PlaySceneAssets\Treasures\Potion</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Potion.xnb</Output>
-      <Time>2012-12-04T09:30:11.7605084+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Treasures\Scarab.png</Source>
-      <Name>PlaySceneAssets\Treasures\Scarab</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Scarab.xnb</Output>
-      <Time>2012-12-04T09:30:28.9884938+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Treasures\Treasure1.png</Source>
-      <Name>PlaySceneAssets\Treasures\Treasure1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Treasure1.xnb</Output>
-      <Time>2012-12-04T09:30:40.6131587+01:00</Time>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Background\Background2.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Treasures\Treasure2.png</Source>
@@ -179,43 +125,43 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Treasure2.xnb</Output>
-      <Time>2012-12-04T09:30:40.5901574+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
-      <Source>PlaySceneAssets\Fonts\Arial.spritefont</Source>
-      <Name>PlaySceneAssets\Fonts\Arial</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Fonts\Arial.xnb</Output>
-      <Time>2012-12-04T09:28:30.2927048+01:00</Time>
-    </Item>
-    <Item>
-      <Source>PlaySceneAssets\Explorer\Explorer.png</Source>
-      <Name>PlaySceneAssets\Explorer\Explorer</Name>
+      <Source>PlaySceneAssets\Treasures\Treasure1.png</Source>
+      <Name>PlaySceneAssets\Treasures\Treasure1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\Explorer.xnb</Output>
-      <Time>2012-12-09T15:53:52.0217073+01:00</Time>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Treasure1.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
-      <Source>PlaySceneAssets\Explorer\explorer_down.png</Source>
-      <Name>PlaySceneAssets\Explorer\explorer_down</Name>
+      <Source>PlaySceneAssets\Treasures\Potion.png</Source>
+      <Name>PlaySceneAssets\Treasures\Potion</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\explorer_down.xnb</Output>
-      <Time>2012-12-09T15:53:52.0147069+01:00</Time>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Potion.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
-      <Source>PlaySceneAssets\Explorer\expvierkant.png</Source>
-      <Name>PlaySceneAssets\Explorer\expvierkant</Name>
+      <Source>PlaySceneAssets\Treasures\Scarab.png</Source>
+      <Name>PlaySceneAssets\Treasures\Scarab</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\expvierkant.xnb</Output>
-      <Time>2012-12-09T15:53:52.0177071+01:00</Time>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Treasures\Scarab.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Blocks\Door.png</Source>
+      <Name>PlaySceneAssets\Blocks\Door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Blocks\Door.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Panel\Panel.png</Source>
@@ -224,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Panel\Panel.xnb</Output>
-      <Time>2012-12-09T15:54:04.6454294+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
       <Source>PlaySceneAssets\Panel\Lives.png</Source>
@@ -233,16 +179,232 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Panel\Lives.xnb</Output>
-      <Time>2012-12-09T15:55:07.3570163+01:00</Time>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <Item>
-      <Source>PlaySceneAssets\Explorer\collisionText.png</Source>
-      <Name>PlaySceneAssets\Explorer\collisionText</Name>
+      <Source>PlaySceneAssets\Scorpion\Scorpion.png</Source>
+      <Name>PlaySceneAssets\Scorpion\Scorpion</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\collisionText.xnb</Output>
-      <Time>2012-12-14T10:10:40.3476488+01:00</Time>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Scorpion\Scorpion.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\Explorer.png</Source>
+      <Name>PlaySceneAssets\Explorer\Explorer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\Explorer.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Beetles\Beetle.png</Source>
+      <Name>PlaySceneAssets\Beetles\Beetle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Beetles\Beetle.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Explorer\collisionTexture.png</Source>
+      <Name>PlaySceneAssets\Explorer\collisionTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Explorer\collisionTexture.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Overlay\overlay.png</Source>
+      <Name>PlaySceneAssets\Overlay\overlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Overlay\overlay.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Overlay\DoorOpenOverlay.png</Source>
+      <Name>PlaySceneAssets\Overlay\DoorOpenOverlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Overlay\DoorOpenOverlay.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Overlay\GameOverOverlay.png</Source>
+      <Name>PlaySceneAssets\Overlay\GameOverOverlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Overlay\GameOverOverlay.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Overlay\LevelNextLevel.png</Source>
+      <Name>PlaySceneAssets\Overlay\LevelNextLevel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Overlay\LevelNextLevel.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Background\Congratulation.png</Source>
+      <Name>PlaySceneAssets\Background\Congratulation</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Background\Congratulation.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Button_save.png</Source>
+      <Name>LevelEditorAssets\Button_save</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Button_save.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Beetle.png</Source>
+      <Name>LevelEditorAssets\Beetle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Beetle.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Block_vert.png</Source>
+      <Name>LevelEditorAssets\Block_vert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Block_vert.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\hulprand.png</Source>
+      <Name>LevelEditorAssets\hulprand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\hulprand.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Left.png</Source>
+      <Name>LevelEditorAssets\Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Left.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\mummy.png</Source>
+      <Name>LevelEditorAssets\mummy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\mummy.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Panel.png</Source>
+      <Name>LevelEditorAssets\Panel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Panel.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Potion.png</Source>
+      <Name>LevelEditorAssets\Potion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Potion.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\pyramid.png</Source>
+      <Name>LevelEditorAssets\pyramid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\pyramid.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Right.png</Source>
+      <Name>LevelEditorAssets\Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Right.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Scarab.png</Source>
+      <Name>LevelEditorAssets\Scarab</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Scarab.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Scorpion.png</Source>
+      <Name>LevelEditorAssets\Scorpion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Scorpion.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Treasure1.png</Source>
+      <Name>LevelEditorAssets\Treasure1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Treasure1.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelEditorAssets\Treasure2.png</Source>
+      <Name>LevelEditorAssets\Treasure2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\LevelEditorAssets\Treasure2.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Mummies\Mummy.png</Source>
+      <Name>PlaySceneAssets\Mummies\Mummy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Mummies\Mummy.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PlaySceneAssets\Fonts\Arial.spritefont</Source>
+      <Name>PlaySceneAssets\Fonts\Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Wouter\Documents\Visual Studio 2010\Projects\Blok2\PyramidPanic\PyramidPanic\PyramidPanic\bin\x86\Debug\Content\PlaySceneAssets\Fonts\Arial.xnb</Output>
+      <Time>2013-03-06T11:31:00+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -18,7 +18,7 @@ namespace PyramidPanic
         private Vector2 position;
         private SpriteFont font;
         private List<Image> images;
-
+        
         //Constructor
         public Panel(PyramidPanic game, Vector2 position)
         {

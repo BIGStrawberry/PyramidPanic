@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -11,14 +11,13 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-    public class Right : AnimatedSprite
+    public class Right : AnimatedSprite 
     {
         //Fields
         private Explorer explorer;
 
         //Constructor
-        public Right(Explorer explorer)
-            : base(explorer)
+        public Right(Explorer explorer) : base(explorer)
         {
             this.explorer = explorer;
             this.i = 0;
@@ -47,7 +46,7 @@ namespace PyramidPanic
                 if (modulo >= (32f - this.explorer.Speed))
                 {
                     int geheelAantalmalen32 = (int)this.explorer.Position.X / 32;
-                    this.explorer.Position = (this.explorer.Position.X >= 0) ?
+                    this.explorer.Position = (this.explorer.Position.X >= 0 ) ?
                                               new Vector2((geheelAantalmalen32 + 1) * 32, this.explorer.Position.Y) :
                                               new Vector2((geheelAantalmalen32) * 32, this.explorer.Position.Y);
                     this.explorer.State = new Idle(this.explorer, 0f);

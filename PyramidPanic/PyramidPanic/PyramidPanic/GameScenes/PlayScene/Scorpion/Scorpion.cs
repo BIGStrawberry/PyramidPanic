@@ -21,30 +21,38 @@ namespace PyramidPanic
         private IScorpion state;
         private float speed;
         private float right, left;
+        private WalkLeft walkLeft;
+        private WalkRight walkRight;
+        private Color color;
 
         //Properties
+        public WalkLeft WalkLeft
+        {
+            get { return this.walkLeft; }
+        }
+        public WalkRight WalkRight
+        {
+            get { return this.walkRight; }
+        }
         public float Left
         {
             set { this.left = value; }
             get { return this.left; }
         }
-
         public float Right
         {
             set { this.right = value; }
             get { return this.right; }
         }
-
         public float Speed
         {
             get { return this.speed; }
         }
-
         public Vector2 Position
         {
             get { return this.position; }
-            set
-            {
+            set 
+            { 
                 this.position = value;
                 this.rectangle.X = (int)this.position.X + 16;
                 this.rectangle.Y = (int)this.position.Y + 16;
@@ -52,47 +60,52 @@ namespace PyramidPanic
                 this.collisionRectangle.Y = (int)this.position.Y;
             }
         }
-
         public PyramidPanic Game
         {
             get { return this.game; }
         }
-
         public Texture2D Texture
         {
             get { return this.texture; }
         }
-
         public Rectangle Rectangle
         {
             get { return this.rectangle; }
         }
-
-        public IScorpion State
-        {
-            get { return this.state; }
-            set { this.state = value; }
-        }
-
         public Rectangle CollisionRectangle
         {
             get { return this.collisionRectangle; }
             set { this.collisionRectangle = value; }
         }
-
-
-
+        public IScorpion State
+        {
+            get { return this.state; }
+            set { this.state = value; }
+        }
+        public Color Color
+        {
+            get { return this.color; }
+            set { this.color = value; }
+        }
+        
+        
         //De constructor
         public Scorpion(PyramidPanic game, Vector2 position, float speed)
         {
             this.game = game;
             this.texture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Scorpion\Scorpion");
-            this.collisionTexture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\collisionText");
+            this.collisionTexture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\collisionTexture");
             this.position = position;
             this.speed = speed;
-            this.rectangle = new Rectangle((int)this.position.X, (int)this.position.Y, this.texture.Width / 4, this.texture.Height);
-            this.collisionRectangle = new Rectangle((int)this.position.X, (int)this.position.Y, this.texture.Width / 4, this.texture.Height);
-            this.state = new WalkRight(this);
+            this.rectangle = new Rectangle((int)this.position.X + 16, (int)this.position.Y + 16, this.texture.Width/4, this.texture.Height);
+            this.collisionRectangle = new Rectangle((int)this.position.X,
+                                                    (int)this.position.Y,
+                                                    this.texture.Width / 4,
+                                                    this.texture.Height);
+            this.color = Color.White;
+            this.walkLeft = new WalkLeft(this);
+            this.walkRight = new WalkRight(this);
+            this.state = this.walkRight;
         }
 
         //Update
@@ -104,8 +117,8 @@ namespace PyramidPanic
         //Draw methode
         public void Draw(GameTime gameTime)
         {
-            this.game.SpriteBatch.Draw(this.collisionTexture, this.collisionRectangle, Color.White);
-            this.state.Draw(gameTime);
+            //this.game.SpriteBatch.Draw(this.collisionTexture, this.collisionRectangle, Color.White);
+            this.state.Draw(gameTime);            
         }
     }
 }

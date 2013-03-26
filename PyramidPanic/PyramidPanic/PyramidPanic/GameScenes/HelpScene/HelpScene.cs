@@ -38,10 +38,10 @@ namespace PyramidPanic
         //Update
         public void Update(GameTime gameTime)
         {
-            if (Input.EdgeDetectKeyDown(Keys.Escape))
-            {
-                this.game.GameState = new StartScene(this.game);
-            }
+           if ( Input.EdgeDetectKeyDown(Keys.Escape))
+           {
+               this.game.GameState = new StartScene(this.game);
+           }
         }
 
         //Draw
@@ -51,3 +51,4 @@ namespace PyramidPanic
         }
     }
 }
+

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -57,13 +57,13 @@ namespace PyramidPanic
                 }
             }
             //Als de startknop goudgeel is of de muis staat boven de start knop
-            if ((this.buttonState == ButtonState.Start) ||
+            if ( ( this.buttonState == ButtonState.Start) ||
                  (this.start.Rectangle.Intersects(Input.MouseRectangle())))
             {
                 //Kleur dan de knop goudgeel
                 this.buttonState = ButtonState.Start;
                 //Als er linksgeklikt wordt met de muis en hij staat boven de startknop of er wordt op de enterknop gedrukt
-                if ((Input.MouseEdgeDetectPressLeft() && this.start.Rectangle.Intersects(Input.MouseRectangle())) ||
+                if ( ( Input.MouseEdgeDetectPressLeft() && this.start.Rectangle.Intersects(Input.MouseRectangle())) ||
                        Input.EdgeDetectKeyDown(Keys.Enter) ||
                        Input.EdgeDetectButtonDown(Buttons.A))
                 {
@@ -72,8 +72,8 @@ namespace PyramidPanic
                 }
             }
 
-            if ((this.buttonState == ButtonState.Load) ||
-                 (this.load.Rectangle.Intersects(Input.MouseRectangle())))
+            if ( ( this.buttonState == ButtonState.Load) ||
+                 (this.load.Rectangle.Intersects(Input.MouseRectangle())) )
             {
                 this.buttonState = ButtonState.Load;
                 if (Input.MouseEdgeDetectPressLeft() && this.load.Rectangle.Intersects(Input.MouseRectangle()) ||
@@ -84,7 +84,7 @@ namespace PyramidPanic
                 }
             }
 
-            if ((this.buttonState == ButtonState.Help) ||
+            if ( ( this.buttonState == ButtonState.Help) ||
                  (this.help.Rectangle.Intersects(Input.MouseRectangle())))
             {
                 this.buttonState = ButtonState.Help;
@@ -96,8 +96,8 @@ namespace PyramidPanic
                 }
             }
 
-            if ((this.buttonState == ButtonState.Score) ||
-                 (this.scores.Rectangle.Intersects(Input.MouseRectangle())))
+            if ( ( this.buttonState == ButtonState.Score) ||
+                 (this.scores.Rectangle.Intersects(Input.MouseRectangle()) ))
             {
                 this.buttonState = ButtonState.Score;
                 if (Input.MouseEdgeDetectPressLeft() && this.scores.Rectangle.Intersects(Input.MouseRectangle()) ||
@@ -108,8 +108,8 @@ namespace PyramidPanic
                 }
             }
 
-            if ((this.buttonState == ButtonState.Quit) ||
-                 (this.quit.Rectangle.Intersects(Input.MouseRectangle())))
+            if (( this.buttonState == ButtonState.Quit) ||
+                 (this.quit.Rectangle.Intersects(Input.MouseRectangle()))) 
             {
                 this.buttonState = ButtonState.Quit;
                 if (Input.MouseEdgeDetectPressLeft() && this.quit.Rectangle.Intersects(Input.MouseRectangle()) ||
@@ -120,8 +120,8 @@ namespace PyramidPanic
                 }
             }
 
-            if ((this.buttonState == ButtonState.LevelEditor) ||
-                 (this.leveleditor.Rectangle.Intersects(Input.MouseRectangle())))
+            if (( this.buttonState == ButtonState.LevelEditor) ||
+                 (this.leveleditor.Rectangle.Intersects(Input.MouseRectangle()))) 
             {
                 this.buttonState = ButtonState.LevelEditor;
                 if (Input.MouseEdgeDetectPressLeft() && this.leveleditor.Rectangle.Intersects(Input.MouseRectangle()) ||
@@ -138,15 +138,15 @@ namespace PyramidPanic
         {
             this.start = new Image(this.game,
                 @"StartSceneAssets\Button_start", new Vector2(this.left, this.top));
-            this.load = new Image(this.game,
+            this.load = new Image(this.game, 
                 @"StartSceneAssets\Button_load", new Vector2(this.left + this.space, this.top));
-            this.help = new Image(this.game,
+            this.help = new Image(this.game, 
                 @"StartSceneAssets\Button_help", new Vector2(this.left + 2 * this.space, this.top));
-            this.scores = new Image(this.game,
+            this.scores = new Image(this.game, 
                 @"StartSceneAssets\Button_scores", new Vector2(this.left + 3 * this.space, this.top));
-            this.quit = new Image(this.game,
+            this.quit = new Image(this.game, 
                 @"StartSceneAssets\Button_quit", new Vector2(this.left + 4 * this.space, this.top));
-            this.leveleditor = new Image(this.game,
+            this.leveleditor = new Image(this.game, 
                 @"StartSceneAssets\Button_leveleditor", new Vector2(this.left + 5 * this.space, this.top));
         }
         //Update
@@ -183,8 +183,8 @@ namespace PyramidPanic
                 default:
                     break;
             }
-
-
+                     
+            
             this.start.Draw(this.game.SpriteBatch, buttonColorStart);
             this.load.Draw(this.game.SpriteBatch, buttonColorLoad);
             this.help.Draw(this.game.SpriteBatch, buttonColorHelp);

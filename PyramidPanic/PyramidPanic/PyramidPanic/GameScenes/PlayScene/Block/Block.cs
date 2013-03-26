@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Media;
 namespace PyramidPanic
 {
     public enum BlockCollision { Passable, NotPassable }
-
+    
     public class Block
     {
         //Fields
@@ -27,6 +27,7 @@ namespace PyramidPanic
         public BlockCollision BlockCollision
         {
             get { return this.blockCollision; }
+            set { this.blockCollision = value; }
         }
 
         public Rectangle Rectangle
@@ -34,9 +35,19 @@ namespace PyramidPanic
             get { return this.rectangle; }
         }
 
+        public Char CharItem
+        {
+            get { return this.charItem; }
+        }
+
+        public Vector2 Position
+        {
+            get { return this.position; }
+        }
+        
         //Constructor
         public Block(PyramidPanic game, string blockName,
-                     Vector2 position, BlockCollision blockCollision, Char charItem)
+                     Vector2 position, BlockCollision blockCollision, Char charItem )
         {
             this.game = game;
             this.texture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Blocks\" + blockName);

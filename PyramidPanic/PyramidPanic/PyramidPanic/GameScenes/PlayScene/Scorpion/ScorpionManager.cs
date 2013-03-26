@@ -19,8 +19,8 @@ namespace PyramidPanic
         //Properties
         public static Level Level
         {
-            set
-            {
+            set 
+            { 
                 level = value;
                 CollisionWallScorpionRight();
                 CollisionWallScorpionLeft();
@@ -46,7 +46,7 @@ namespace PyramidPanic
         {
             foreach (Scorpion scorpion in level.Scorpions)
             {
-                for (int i = (int)(scorpion.Position.X / 32); i >= 0; i--)
+                for (int i = (int)(scorpion.Position.X / 32); i >=0; i--)
                 {
                     if (level.Blocks[i, (int)(scorpion.Position.Y / 32)].BlockCollision == BlockCollision.NotPassable)
                     {

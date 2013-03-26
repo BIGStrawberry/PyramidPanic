@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -16,12 +16,18 @@ namespace PyramidPanic
         //Fields
         private PyramidPanic game;
         private Level level;
-        private int levelNumber = 2;
+        private static int levelNumber = 0;
+        private static int endLevel = 10;
 
         //Constructor
         public PlayScene(PyramidPanic game)
         {
             this.game = game;
+            if (levelNumber == 0 || Score.isDead())
+            {
+                levelNumber = 0;
+                Score.Initialize();
+            }
             this.Initialize();
         }
 
@@ -31,10 +37,16 @@ namespace PyramidPanic
             this.LoadContent();
         }
 
+        public static int LevelNumber
+        {
+            set { levelNumber = value; }
+            get { return levelNumber; }
+        }
+
         //LoadContent
         public void LoadContent()
         {
-            this.level = new Level(this.game, this.levelNumber);
+            this.level = new Level(this.game, levelNumber);
         }
 
         //Update
@@ -44,6 +56,25 @@ namespace PyramidPanic
             {
                 this.game.GameState = new StartScene(this.game);
             }
+            if (Score.isDead())
+            {
+                this.level.LevelState = level.LevelGameOver;
+            }
+            if (ExplorerManager.WalkOutOfLevel())
+            {
+                Score.DoorsAreClosed = true;
+                levelNumber++;
+                this.level.Explorer.Position = new Vector2(100f, 100f);
+                if (levelNumber == endLevel)
+                {
+                    this.level.LevelState = new LevelEndGame(this.level);                    
+                    levelNumber = 0;
+                }
+                else
+                {
+                    this.level.LevelState = level.LevelNextLevel;
+                }
+            }
             this.level.Update(gameTime);
         }
 
@@ -52,6 +83,7 @@ namespace PyramidPanic
         {
             this.game.GraphicsDevice.Clear(Color.White);
             this.level.Draw(gameTime);
+
         }
     }
 }

@@ -15,25 +15,36 @@ namespace PyramidPanic
     {
         //Fields
         private PyramidPanic game;
-        private Texture2D texture;
-        private Rectangle rectangle;
+        private Texture2D texture, collisionText;
+        private Rectangle rectangle, collisionRectangle;
         private Vector2 position;
         private float speed;
-        //De timer
-        private int[] xValue = {0, 32, 64, 96};
-        private int i= 0;
-        private float timer;
+        private Color color;
+
+        //State variable is de parentclass van de toestandsklassen
+        AnimatedSprite state;
 
         //Properties
+        public AnimatedSprite State
+        {
+            set { this.state = value; }
+        }
+
         public PyramidPanic Game
         {
             get { return this.game; }
-           
         }
+
         public Rectangle Rectangle
         {
             get { return this.rectangle; }
         }
+
+        public Rectangle CollisionRectangle
+        {
+            get { return this.collisionRectangle; }
+        }
+
         public Texture2D Texture
         {
             get { return this.texture; }
@@ -45,8 +56,10 @@ namespace PyramidPanic
             set
             {
                 this.position = value;
-                this.rectangle.X = (int)this.position.X;
-                this.rectangle.Y = (int)this.position.Y;
+                this.rectangle.X = (int)this.position.X + 16;
+                this.rectangle.Y = (int)this.position.Y + 16;
+                this.collisionRectangle.X = (int)this.position.X;
+                this.collisionRectangle.Y = (int)this.position.Y;
             }
         }
 
@@ -55,37 +68,46 @@ namespace PyramidPanic
             get { return this.speed; }
         }
 
+        public Color Color
+        {
+            get { return this.color; }
+        }
+
         //Constructor
         public Explorer(PyramidPanic game, Vector2 position, float speed)
         {
             this.game = game;
             this.position = position;
             this.speed = speed;
-            this.texture = game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\Explorer");
-            this.rectangle = new Rectangle((int)position.Y,
-                                           (int)position.X,
+            this.texture = this.game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\Explorer");
+            this.rectangle = new Rectangle((int)position.X + 16,
+                                           (int)position.Y + 16,
                                            this.texture.Width/4,
                                            this.texture.Height);
-                                              
+            this.collisionText = this.game.Content.Load<Texture2D>(@"PlaySceneAssets\Explorer\collisionTexture");
+            this.collisionRectangle = new Rectangle((int)position.X,
+                                                    (int)position.Y,
+                                                    32,
+                                                    32);
+            this.color = Color.White;
+            this.state = new Idle(this);
+        }
+
+        public void Update(GameTime gameTime)
+        {
+            ExplorerManager.Explorer = this;
+            ExplorerManager.CollisionDetectTreasures();
+            ExplorerManager.CollisionDetectScorpions();
+            ExplorerManager.CollisionDetectBeetles();
+            ExplorerManager.CollisionDetectMummies();
+            
+            this.state.Update(gameTime);
         }
 
         public void Draw(GameTime gameTime)
         {
-            this.timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (this.timer >1f /8f)
-            {
-                this.timer = 0;
-                i++;
-                if (this.i>3)
-                {
-                    this.i = 0;
-                }
-            }
-        }
-            public void Draw(GameTime gameTime)
-        }
-            this.game
+            //this.game.SpriteBatch.Draw(this.collisionText, this.collisionRectangle, Color.White);
+            this.state.Draw(gameTime);
         }
     }
-
 }

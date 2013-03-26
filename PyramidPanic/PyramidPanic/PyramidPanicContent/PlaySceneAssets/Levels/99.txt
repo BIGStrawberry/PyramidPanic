@@ -1,0 +1,14 @@
+@xwxywxyxywwxyxwxyxx
+yE.......BBBBBBBBBBw
+x.bbbbbbb..........x
+w.bbbbbbb..........y
+z...aaaaaaaaaa.....z
+x...aaaaaaaaaa.....x
+w...a.b.c.d........y
+w...a.b.c.d........w
+x...a.b.c.d........x
+yS......c..........x
+wS..cc..c..cc......y
+yS....ccccc........x
+xS......c..........x
+xwyxwwxywwxyxxwxywxy

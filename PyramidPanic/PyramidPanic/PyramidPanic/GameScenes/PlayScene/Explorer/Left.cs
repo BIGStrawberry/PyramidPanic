@@ -11,14 +11,13 @@ using Microsoft.Xna.Framework.Media;
 
 namespace PyramidPanic
 {
-    public class Left : AnimatedSprite
+    public class Left : AnimatedSprite 
     {
         //Fields
         private Explorer explorer;
 
         //Constructor
-        public Left(Explorer explorer)
-            : base(explorer)
+        public Left(Explorer explorer) : base(explorer)
         {
             this.explorer = explorer;
             this.angle = (float)Math.PI;
@@ -38,13 +37,13 @@ namespace PyramidPanic
                 {
                     this.explorer.State = new Idle(this.explorer, (float)Math.PI);
                 }
-            }
+            }           
             //Blijf op het grid
             if (Input.DetectKeyUp(Keys.Left))
-            {
+            {                
                 //Aanpassing voor als de explorer naar links het scherm uitloopt
-                float modulo = (this.explorer.Position.X >= 0) ?
-                                this.explorer.Position.X % 32 :
+                float modulo = (this.explorer.Position.X >= 0) ? 
+                                this.explorer.Position.X % 32 : 
                                 32 + this.explorer.Position.X % 32;
                 if (modulo <= this.explorer.Speed)
                 {
@@ -52,7 +51,7 @@ namespace PyramidPanic
                     //Aanpassing voor als de explorer naar links het scherm uitloopt
                     this.explorer.Position = (this.explorer.Position.X >= 0) ?
                                               new Vector2(geheelAantalmalen32 * 32, this.explorer.Position.Y) :
-                                              new Vector2((geheelAantalmalen32 - 1) * 32, this.explorer.Position.Y);
+                                              new Vector2((geheelAantalmalen32 -1) * 32, this.explorer.Position.Y);
                     this.explorer.State = new Idle(this.explorer, (float)Math.PI);
                 }
             }

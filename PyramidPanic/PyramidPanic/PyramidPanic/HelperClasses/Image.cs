@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -23,6 +23,11 @@ namespace PyramidPanic
         public Rectangle Rectangle
         {
             get { return this.rectangle; }
+        }
+
+        public Vector2 Position
+        {
+            get { return this.position; }
         }
 
         //Constructor

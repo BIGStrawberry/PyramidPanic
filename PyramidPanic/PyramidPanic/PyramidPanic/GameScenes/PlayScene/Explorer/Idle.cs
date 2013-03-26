@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -15,20 +15,18 @@ namespace PyramidPanic
     {
         //Fields
         private Explorer explorer;
-
+        
 
         //Properties
 
         //Constructor
-        public Idle(Explorer explorer)
-            : base(explorer)
+        public Idle(Explorer explorer) : base(explorer)
         {
             this.explorer = explorer;
         }
 
         //Dit is een overload van de constructor van de Idle class.
-        public Idle(Explorer explorer, float angle)
-            : base(explorer)
+        public Idle(Explorer explorer, float angle) : base(explorer)
         {
             this.explorer = explorer;
             this.angle = angle;
